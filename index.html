@@ -43,8 +43,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                        alt="Retrato da Arquiteta" class="about-image">
+                    <img src="imgs/fernanda.jpg" alt="Retrato da Arquiteta" class="about-image">
                 </div>
                 <div class="about-text">
                     <h2>Sobre Mim</h2>
@@ -66,40 +65,56 @@
                 <a href="projects.html" class="btn-outline">Ver Todos</a>
             </div>
 
-            <!-- Dynamic Project Grid -->
+            <!-- Static Project Grid -->
             <div class="project-grid" id="project-grid-container">
-                <!-- Projects will be loaded here via JS -->
-                <p>Carregando projetos...</p>
+                <!-- Project 1 -->
+                <a href="projects/farmacia-braga.html" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                            alt="Farmácia Braga" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Farmácia Braga</h3>
+                        <p>Comercial / Fachada</p>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="projects/interiores-comercial.html" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80"
+                            alt="Interiores Comercial" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Interiores Comercial</h3>
+                        <p>Interiores / Loja</p>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="projects/residencial-cariri.html" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Residencial Cariri" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Residencial Cariri</h3>
+                        <p>Residencial / Obra</p>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="projects/consultoria-online.html" class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Consultoria Online" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Consultoria Online</h3>
+                        <p>Serviço / Remoto</p>
+                    </div>
+                </a>
             </div>
-
-            <script>
-                // Load Projects Dynamically
-                fetch('data/projects.json')
-                    .then(response => response.json())
-                    .then(projects => {
-                        const container = document.getElementById('project-grid-container');
-                        container.innerHTML = ''; // Create
-
-                        projects.slice(0, 4).forEach(project => {
-                            const card = `
-                                <a href="project.html?id=${project.id}" class="project-card">
-                                    <div class="project-image-wrapper">
-                                        <img src="${project.mainImage}" alt="${project.title}" class="project-image">
-                                    </div>
-                                    <div class="project-info">
-                                        <h3>${project.title}</h3>
-                                        <p>${project.category}</p>
-                                    </div>
-                                </a>
-                            `;
-                            container.innerHTML += card;
-                        });
-                    })
-                    .catch(err => {
-                        console.error('Erro ao carregar projetos:', err);
-                        document.getElementById('project-grid-container').innerHTML = '<p>Erro ao carregar projetos via JSON.</p>';
-                    });
-            </script>
         </div>
     </section>
 
