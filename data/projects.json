@@ -1,0 +1,55 @@
+[
+  {
+    "id": "farmacia-braga",
+    "title": "Farmácia Braga",
+    "category": "Comercial / Fachada",
+    "location": "Juazeiro do Norte",
+    "year": "2024",
+    "description": "Este projeto de fachada comercial foi desenvolvido para destacar a Farmácia Braga no cenário urbano de Juazeiro do Norte. Buscamos uma estética limpa e convidativa, utilizando iluminação estratégica para garantir visibilidade noturna sem poluição visual. A escolha de materiais duráveis e de fácil manutenção foi primordial, considerando o clima da região do Cariri.",
+    "mainImage": "https://images.unsplash.com/photo-1577495508048-b635879837f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+    ]
+  },
+  {
+    "id": "interiores-comercial",
+    "title": "Interiores Comercial",
+    "category": "Interiores / Loja",
+    "location": "Crato",
+    "year": "2024",
+    "description": "Para este espaço comercial no Crato, criamos um ambiente acolhedor e sofisticado. O uso de arcos iluminados cria nichos de destaque para os produtos, valorizando a mercadoria e guiando o olhar do cliente. A paleta de cores neutra e quente, combinada com a iluminação indireta, proporciona uma experiência de compra confortável e exclusiva.",
+    "mainImage": "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80",
+    "gallery": []
+  },
+  {
+    "id": "residencial-cariri",
+    "title": "Residencial Cariri",
+    "category": "Residencial / Obra",
+    "location": "Barbalha",
+    "year": "2024",
+    "description": "Projeto residencial em fase de obra. Focado na integração com a natureza e ventilação cruzada.",
+    "mainImage": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "gallery": []
+  },
+  {
+    "id": "consultoria-online",
+    "title": "Consultoria Online",
+    "category": "Serviço / Remoto",
+    "location": "Global",
+    "year": "2024",
+    "description": "Serviço de consultoria para quem quer transformar ambientes de forma rápida e prática.",
+    "mainImage": "https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "gallery": []
+  },
+  {
+    "id": "apenas-um-teste",
+    "title": "Apenas um teste",
+    "category": "obra",
+    "location": "Mauriti",
+    "year": "2025",
+    "description": "dsdslksjaldjasljlajsljsaldja",
+    "mainImage": "https://plus.unsplash.com/premium_photo-1681550097108-187abe10d445?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "gallery": []
+  }
+]
