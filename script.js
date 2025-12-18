@@ -5,6 +5,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
+
+        // Close mobile menu if open
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+        }
     });
 });
 
@@ -30,4 +36,14 @@ document.addEventListener('DOMContentLoaded', () => {
         section.classList.add('fade-in-section');
         observer.observe(section);
     });
+
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
 });
